@@ -1,8 +1,38 @@
 .sidebar-section{
     display: flex;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
 }
 
 .sidebar{
-    height: 100vh
+    height: 100vh;
+    background-color: black;
+    width: 95px;
+    transition: 0.5s;
+}
+
+.sidebar-expand{
+    width: 230px;
+    transition: 0.5s;
+}
+
+.icon-for-sidebar-expand-and-collapse{
+   display: flex;
+   align-items: right;
+   justify-content: right;
+   cursor: pointer;
+}
+
+.icon-for-sidebar-expand-and-collapse p svg{
+    background-color: rgb(170, 206, 12);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.container-fluid{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    overflow: hidden;
+
 }
