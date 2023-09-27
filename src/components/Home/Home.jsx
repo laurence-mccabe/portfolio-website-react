@@ -2,7 +2,7 @@ import "./Home.css"
 
 const Home = () => {
   return (
-    <div>
+    <div className="container-fluid home">
       Home Section
     </div>
   )

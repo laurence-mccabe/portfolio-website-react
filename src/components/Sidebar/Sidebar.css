@@ -1,18 +1,21 @@
 .sidebar-section{
     display: flex;
-    /* background-color: aliceblue; */
+    background-color: aliceblue;
 }
 
 .sidebar{
     height: 100vh;
-    background-color: black;
+    background-color: rgb(69, 61, 61);
     width: 95px;
-    transition: 0.5s;
+    transition: transform 0.5s ease; /* Use transform for width change */
+    top: fixed;
+    bottom: fixed;
+    right: fixed;
+    left: fixed;
 }
 
 .sidebar-expand{
-    width: 230px;
-    transition: 0.5s;
+    width: 300px;
 }
 
 .icon-for-sidebar-expand-and-collapse{
