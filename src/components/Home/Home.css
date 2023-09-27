@@ -1,4 +1,21 @@
 .home{
     height: 400px;
-    background-color: rgb(43, 40, 40);
+    color: white;
+}
+
+.home-content h1{
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+    padding-left: 200px;
+}
+
+.typewriter{
+    padding-left: 200px;
+    margin-top: 20px;
+    color: rgb(134, 165, 34);
+}
+
+.button-for-action{
+    display: flex;
 }
