@@ -20,9 +20,10 @@ const Home = () => {
           </h3>
 
           <div className="button-for-action">
+            <div className="hire-me-button">Hire Me</div>
 
+            <div className="get-resume-button">Get Resume</div>
           </div>
-
         </div>
       </div>
     </>

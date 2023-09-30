@@ -1,21 +1,61 @@
+
 .home{
     height: 400px;
     color: white;
+    background-color: rgb(81, 113, 141);
 }
 
 .home-content h1{
     margin: auto;
     margin-top: 100px;
-    padding: 10px;
     padding-left: 200px;
 }
 
 .typewriter{
-    padding-left: 200px;
     margin-top: 20px;
     color: rgb(134, 165, 34);
+    padding-left: 200px;
+
 }
 
 .button-for-action{
+    padding-left: 200px;
     display: flex;
 }
+
+.hire-me-button{
+    background-color: #bc4822;
+    text-align:center;
+    width: 120px;
+    padding: 10px;
+    border-radius: 90px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 2px solid #ab7c17;
+}
+
+.hire-me-button:hover{
+    background-color: #f5efeb;
+    width: 150px;
+    transition-duration: 0.5s;
+    color: black;
+}   
+
+.get-resume-button{
+    background-color: #e9c01d;
+    text-align:center;
+    width: 120px;
+    padding: 10px;
+    border-radius: 90px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 2px solid #e36a32;
+}
+
+.get-resume-button:hover{
+    background-color: #050404;
+    width: 150px;
+    transition-duration: 0.5s;
+    color: rgb(247, 242, 242);
+} 
+

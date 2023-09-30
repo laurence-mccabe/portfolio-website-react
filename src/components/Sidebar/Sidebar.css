@@ -1,12 +1,14 @@
 .sidebar-section{
     display:flex;
-    background-color: rgb(118, 66, 66);
+    background-color: rgb(224, 173, 173);
 }
 
 .sidebar{
     height: 100vh;
-    background-color: rgb(138, 93, 93);
+    background-color: rgba(180, 29, 29, 0.5); /* Red with 50% transparency */
     width: 95px;
+     /* having trouble getting colors in home div and sidebar to overlap and consequently darken the color 
+     adding hte pos property below allows the overlap, but still no darken */
     position: fixed;
 }
 
@@ -37,3 +39,8 @@
     padding-right: 0px!important;
     overflow: hidden;
 }
+
+.container-fluid-reduced {
+    /* Reduced width from the left */
+    margin-left: 230px;
+  }

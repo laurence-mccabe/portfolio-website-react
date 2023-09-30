@@ -1,4 +1,4 @@
-.sidebar-profile-pic{
+/* .sidebar-profile-pic{
     height: 120px;
     width: 120px;
     display: flex;
@@ -8,8 +8,25 @@
     margin: 0 auto;
     object-fit: cover;
     border-radius: 3px solid #d5f003;
-    
-}
+} */
+
+.sidebar-profile-pic {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    margin-top: 20px;
+    border-radius: 50%; /* Use 50% to create a circular border */
+    margin: 0 auto;
+    overflow: hidden; /* Hide any image overflow that might interfere with border radius */
+  }
+  
+  .sidebar-profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 100%; 
+    border: 3px solid #d5f003;
+  }
 
 .navbar-items ul li{
     color: white ;

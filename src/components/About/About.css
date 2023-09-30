@@ -1,0 +1,40 @@
+.about-image {
+  height: 180px;
+  width: 180px;
+  display: flex;
+  margin-top: 50px;
+  border-radius: 50%; /* Use 50% to create a circular border */
+  margin: 0 auto;
+  overflow: hidden; /* Hide any image overflow that might interfere with border radius */
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 3px solid #d5f003;
+  
+}
+
+.about-section {
+  box-shadow: 12px 10px 10px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 12px 10px 10px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 10px 10px -1px rgba(0, 0, 0, 0.75);
+  margin-top: 50px;
+  height: 350px;
+}
+
+.about-details{
+}
+
+.about-title h5{
+    text-align:center;
+}
+.line{
+    display: block;
+    width: 70px;
+    height: 3px;
+    margin: 1px auto;
+    background-color: yellowgreen;
+}
