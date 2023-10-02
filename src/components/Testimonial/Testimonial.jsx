@@ -23,6 +23,60 @@ const data =[
         des: "I like his work ggg",
         img: "https://www.w3schools.com/howto/img_avatar.png"
     },
+    {
+        name:'Emily',
+        position: "ceo",
+        des: "I like his work",
+        img: "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+        name:'joe',
+        position: "cyyyy",
+        des: "I like his work",
+        img: "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+        name:'sam',
+        position: "ceo",
+        des: "I like his work ggg",
+        img: "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+        name:'Emily',
+        position: "ceo",
+        des: "I like his work",
+        img: "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+        name:'joe',
+        position: "cyyyy",
+        des: "I like his work",
+        img: "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+        name:'sam',
+        position: "ceo",
+        des: "I like his work ggg",
+        img: "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+        name:'Emily',
+        position: "ceo",
+        des: "I like his work",
+        img: "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+        name:'joe',
+        position: "cyyyy",
+        des: "I like his work",
+        img: "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+        name:'sam',
+        position: "ceo",
+        des: "I like his work ggg",
+        img: "https://www.w3schools.com/howto/img_avatar.png"
+    },
     
     
 ]
@@ -33,6 +87,7 @@ const settings = {
     slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
+    arrows: true,
     responsive: [
       {
         breakpoint: 1024,
