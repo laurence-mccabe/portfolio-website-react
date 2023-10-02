@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './Project.css'
 import { FcExpand, FcCollapse } from 'react-icons/fc'
+import WorkExperience from '../WorkExperience/WorkExperience'
 
 const ProjectList = ({ name, des, projectlink, techused }) => {
   const [show, setShow] = useState(true)
@@ -10,6 +11,7 @@ const ProjectList = ({ name, des, projectlink, techused }) => {
   }
 
   return (
+    
     <div className="project-list">
     
       <div className="title-and-collapse-option">
@@ -44,7 +46,7 @@ const ProjectList = ({ name, des, projectlink, techused }) => {
               Live Demo
             </a>
           </div>
-         
+          
     </div>
   )
 }

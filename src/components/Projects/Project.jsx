@@ -1,3 +1,4 @@
+import WorkExperience from '../WorkExperience/WorkExperience'
 import './Project.css'
 import ProjectList from './ProjectList'
 
@@ -63,6 +64,7 @@ const Project = () => {
   ]
 
   return (
+
     <div className="container">
       <div className="section-title projects">
         <h5>Projects</h5>
@@ -91,11 +93,15 @@ const Project = () => {
                 ))}
             </div>
         </div> */}
+         
     </div>
 
     ))}
     </div>
+    <div><WorkExperience /></div>
+    
     </div>
+    
   )
 }
 

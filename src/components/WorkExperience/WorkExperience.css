@@ -1,0 +1,28 @@
+.workExperience {
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.tech-skills p{
+    background-color: black;
+    border-radius: 90px;
+    color:white;
+    padding:10px;
+    text-align: center;
+    /* width: 100px; */
+    margin: 5px;
+}
+
+.tech-skills p:hover{
+    background-color: tomato;
+    color: black;
+    transition-duration: 0.2s;
+}
+
+.date-class{
+    color: black; 
+}
+
+.work-experience-line{
+    margin-bottom: 10px;
+}
