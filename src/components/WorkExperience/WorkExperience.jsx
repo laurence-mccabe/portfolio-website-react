@@ -4,7 +4,7 @@ import {
 } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 import './WorkExperience.css'
-import { FcExpand, FcCollapse } from 'react-icons/fc'
+import { FcCollapse } from 'react-icons/fc'
 import Education from '../Education/Education'
 
 const WorkExperience = () => {
@@ -91,7 +91,7 @@ const WorkExperience = () => {
   ]
 
   return (
-    <div className="container workExperience">
+    <div className="container workExperience" id="work-experience">
       <div className="section-title">
         <h5>Work Experience</h5>
         <span className="line work-experience-line"></span>

@@ -3,7 +3,7 @@ import profilePic from '../../Image/cat2.jpg'
 
 const About = () => {
   return (
-    <div className="container about-section">
+    <div className="container about-section" id="about">
 
       <div className="row">
 

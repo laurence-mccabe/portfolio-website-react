@@ -44,3 +44,11 @@
     /* Reduced width from the left */
     margin-left: 230px;
   }
+  @media (max-width: 1000px) {
+    .sidebar {
+      display: none;
+    }
+    .container-fluid-reduced {
+      margin-left: 0;
+    }
+  }

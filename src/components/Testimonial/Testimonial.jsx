@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Testimonial.css'
+import Contact from "../Contact/Contact";
 
 function Testimonial() {
 const data =[
@@ -117,7 +118,7 @@ const settings = {
   };
 
   return (
-    <div className="container testimonial-section">
+    <div className="container testimonial-section" id="testimonial">
 
       <div className="section-title ">
         <h5>Testimonial</h5>
@@ -140,6 +141,7 @@ const settings = {
           
         </Slider>
       </div>
+      <Contact />
 
     </div>
   )

@@ -36,7 +36,7 @@
     font-size: small;
 }
 
-.navbar-items ul li svg {
+/* .navbar-items ul li svg {
     margin-left: -10px; 
     margin-right: 15px;
 }
@@ -44,7 +44,21 @@
 
 .navbar-items-only-icons ul li svg {
     margin-right: 20px;
-    /* margin-top: 10px;
-    margin-bottom: 10px; */
-    
-}
+    margin-top: 10px;
+    margin-bottom: 10px;
+} */
+/* there is an issue with the npm react-scroll package. spy={true} does not work, and it creates problems (active class not being applied) when trying to apply active class manually. */
+/* cannot get it to work with spy, it took the prop "className", so was able to add "active" for click highlighting. */
+.nav-item .active {
+    border-left: 2px solid rgb(233, 249, 4);
+    padding-left: 5px; /* Adjust this value to move the border further to the left */
+    color: yellow;
+  }
+
+  .navbar-items ul li a {
+    text-decoration: none;
+  }
+
+  
+
+  

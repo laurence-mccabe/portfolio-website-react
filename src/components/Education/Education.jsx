@@ -42,7 +42,7 @@ const colors = [
 
   return (
     <>
-    <div className="container education-section">
+    <div className="container education-section" id="education">
       <div className="section-title">
         <h5>Education</h5>
         <span className="line education-line"></span>
