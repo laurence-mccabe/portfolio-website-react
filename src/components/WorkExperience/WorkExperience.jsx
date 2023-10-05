@@ -97,7 +97,9 @@ const WorkExperience = () => {
         <span className="line work-experience-line"></span>
       </div>
 
-      <VerticalTimeline lineColor="red">
+      <VerticalTimeline lineColor="red" style={{
+          zIndex: "-1000",
+        }}>
         {data.map((item, index) => (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"

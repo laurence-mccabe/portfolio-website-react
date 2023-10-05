@@ -1,6 +1,7 @@
 .workExperience {
     margin-top: 50px;
     padding: 10px;
+    z-index: -1;
 }
 
 .tech-skills p{
