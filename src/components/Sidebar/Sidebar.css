@@ -1,54 +1,57 @@
-.sidebar-section{
-    display:flex;
-    background-color: rgb(224, 173, 173);
+.sidebar-section {
+  display: flex;
+  background-color: rgb(224, 173, 173);
+
 }
 
-.sidebar{
-    height: 100vh;
-    background-color: rgba(180, 29, 29, 0.5); /* Red with 50% transparency */
-    width: 95px;
-     /* having trouble getting colors in home div and sidebar to overlap and consequently darken the color 
+.sidebar {
+  height: 100vh;
+  background-color: rgba(180, 29, 29, 0.5); /* Red with 50% transparency */
+  width: 95px;
+  /* having trouble getting colors in home div and sidebar to overlap and consequently darken the color 
      adding hte pos property below allows the overlap, but still no darken */
-    position: fixed;
+  position: fixed;
+  z-index: 1000;
+
 }
 
-.sidebar-expand{
-    width: 230px;
+.sidebar-expand {
+  width: 230px;
 }
 
 /* need to move the arrow to the right side */
-.icon-for-sidebar-expand-and-collapse{
-   display: flex;
-   align-items: right;
-   justify-content: right;
-   cursor: pointer;
+.icon-for-sidebar-expand-and-collapse {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  cursor: pointer;
+  z-index: 1000;
 }
 
-.icon-for-sidebar-expand-and-collapse p svg{
-    background-color: black;
-    padding: 10px;
-    color: white;
-    border-radius: 5px;
-    margin-top: 50px;
+.icon-for-sidebar-expand-and-collapse p svg {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 50px;
 }
-
 
 /* bs class .container-fluid comes with padding so need to reduce it */
-.container-fluid{
-    padding-left: 0px!important;
-    padding-right: 0px!important;
-    overflow: hidden;
+.container-fluid {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  overflow: hidden;
 }
 
 .container-fluid-reduced {
-    /* Reduced width from the left */
-    margin-left: 230px;
+  /* Reduced width from the left */
+  margin-left: 230px;
+}
+@media (max-width: 1000px) {
+  .sidebar {
+    display: none;
   }
-  @media (max-width: 1000px) {
-    .sidebar {
-      display: none;
-    }
-    .container-fluid-reduced {
-      margin-left: 0;
-    }
+  .container-fluid-reduced {
+    margin-left: 0;
   }
+}

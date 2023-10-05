@@ -13,7 +13,7 @@ import { Link } from 'react-scroll'
 // 12:30
 import { useState } from 'react'
 
-const SidebarList = ({ expandSidebar = false, expandMobileSidebar =false }) => {
+const SidebarList = ({ expandSidebar }) => {
 
   const [activeLink, setActiveLink] = useState("home");
 
@@ -34,7 +34,7 @@ const SidebarList = ({ expandSidebar = false, expandMobileSidebar =false }) => {
   
   return (
     <>
-      {(expandSidebar || expandMobileSidebar) ? (
+      {expandSidebar  ? (
         <div className="navbar-items">
           <div className="sidebar-profile-pic">
             <img src={profilePic} alt="profile-pic" />
@@ -57,40 +57,21 @@ const SidebarList = ({ expandSidebar = false, expandMobileSidebar =false }) => {
         </div>
       ) : (
         <div className="navbar-items-only-icons navbar-items">
-          <ul>
-            <li className="nav-item">
-              {' '}
-              <FcHome size={25} />
-            </li>
-            <li className="nav-item">
-              {' '}
-              <FcNightPortrait size={25} />
-            </li>
-            <li className="nav-item me">
-              {' '}
-              <FcFactory size={25} />
-            </li>
-            <li className="nav-item">
-              {' '}
-              <MdBiotech size={25} />
-            </li>
-            <li className="nav-item">
-              {' '}
-              <MdCastForEducation size={25} />
-            </li>
-            <li className="nav-item">
-              {' '}
-              <FcTodoList size={25} />
-            </li>
-            <li className="nav-item">
-              {' '}
-              <FcSalesPerformance size={25} />
-            </li>
-            <li className="nav-item">
-              {' '}
-              <FcContacts size={25} />
-            </li>
-          </ul>
+           <ul>
+        {linkData.map(({ id, icon }) => (
+          <li className="nav-item" key={id}>
+            <Link
+              to={id}
+              smooth={true}
+              duration={100}
+              className={activeLink === id ? 'active' : ''}
+              onClick={() => handleLinkClick(id)}
+            >
+              {icon}
+            </Link>
+          </li>
+        ))}
+      </ul>
         </div>
       )}
     </>

@@ -1,0 +1,27 @@
+.mobile-navbar-items ul li {
+  color: white;
+  list-style-type: none;
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: small;
+}
+
+.mobile-nav-item .active {
+  border-left: 2px solid rgb(233, 249, 4);
+  padding-left: 5px; /* Adjust this value to move the border further to the left */
+  color: yellow;
+}
+
+.mobile-navbar-items ul li a {
+  text-decoration: none;
+}
+
+.mobile-nav-item {
+  z-index: 1000;
+}
+
+.mobile-navbar-items ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 1px; /* Remove padding */
+  margin: 10px; /* Remove margin */
+}

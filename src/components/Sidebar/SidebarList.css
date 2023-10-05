@@ -57,8 +57,12 @@
 
   .navbar-items ul li a {
     text-decoration: none;
+  }
+
+  .nav-item {
     z-index: 1000 ;
   }
+
 
   
 
