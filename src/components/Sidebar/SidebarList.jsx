@@ -13,7 +13,7 @@ import { Link } from 'react-scroll'
 // 12:30
 import { useState } from 'react'
 
-const SidebarList = ({ expandSidebar }) => {
+const SidebarList = ({ expandSidebar = false, expandMobileSidebar =false }) => {
 
   const [activeLink, setActiveLink] = useState("home");
 
@@ -24,17 +24,17 @@ const SidebarList = ({ expandSidebar }) => {
   const linkData = [
     { id: 'home', text: 'Home', icon: <FcHome size={25} /> },
     { id: 'about', text: 'About', icon: <FcNightPortrait size={25} /> },
-    { id: 'work-experience', text: 'Work Experience', icon: <FcFactory size={25} color="yellow" /> },
     { id: 'techstack', text: 'Tech Stack', icon: <MdBiotech size={25} /> },
-    { id: 'education', text: 'Education', icon: <MdCastForEducation size={25} /> },
     { id: 'projects', text: 'Projects', icon: <FcTodoList size={25} /> },
+    { id: 'work-experience', text: 'Work Experience', icon: <FcFactory size={25} color="yellow" /> },
+    { id: 'education', text: 'Education', icon: <MdCastForEducation size={25} /> },
     { id: 'testimonial', text: 'Testimonial', icon: <FcSalesPerformance size={25} /> },
     { id: 'contact', text: 'Contact', icon: <FcContacts size={25} /> },
   ];
   
   return (
     <>
-      {expandSidebar ? (
+      {(expandSidebar || expandMobileSidebar) ? (
         <div className="navbar-items">
           <div className="sidebar-profile-pic">
             <img src={profilePic} alt="profile-pic" />

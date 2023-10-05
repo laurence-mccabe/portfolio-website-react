@@ -1,0 +1,25 @@
+@media screen and (min-width: 1000px) {
+  .mobile-view-navbar {
+    display: none;
+  }
+}
+
+.mobile-view-navbar {
+  width: 100%;
+  background-color: rgba(180, 29, 29, 0.5);
+  color: white;
+  position: fixed;
+  top: 0; /* Position it at the top */
+  left: 0; /* Position it at the left */
+}
+
+.mobile-view-navbar p{
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+
+
+/* .navbar-header p{
+
+  } */
