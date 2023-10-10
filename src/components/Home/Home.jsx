@@ -1,10 +1,9 @@
 import { useDarkMode } from '../Contexts/DarkModeProvider'
 import { HiOutlineMoon, HiOutlineSun } from 'react-icons/hi2'
 import './Home.css'
-import Fade from 'react-reveal/Fade';
-
 
 import Typewriter from 'typewriter-effect'
+import { Link } from 'react-scroll'
 
 const Home = () => {
   const { isDarkMode, toggleDarkMode } = useDarkMode()
@@ -35,9 +34,12 @@ const Home = () => {
           </h3>
 
           <div className="button-for-action">
-            <div className="hire-me-button">Hire Me</div>
-
-            <div className="get-resume-button">Get Resume</div>
+            <Link to="contact" smooth={true} duration={100}>
+              <div className="hire-me-button">Hire Me</div>
+            </Link>
+            <Link to="contact" smooth={true} duration={100}>
+              <div className="get-resume-button">Get Resume</div>
+            </Link>
           </div>
         </div>
       </div>

@@ -46,8 +46,8 @@ const SidebarList = ({ expandSidebar }) => {
               to={id}
               smooth={true}
               duration={100}
-              className={activeLink === id ? 'active' : ''}
-              onClick={() => handleLinkClick(id)}
+              // className={activeLink === id ? 'active' : ''}
+              // onClick={() => handleLinkClick(id)}
             >
               {icon} {text}
             </Link>
