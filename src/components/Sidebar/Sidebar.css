@@ -1,15 +1,13 @@
 .sidebar-section {
-  display: flex;
-  background-color: rgb(224, 173, 173);
-
 }
 
 .sidebar {
   height: 100vh;
-  background-color: rgba(180, 29, 29, 0.5); /* Red with 50% transparency */
+  background-color: rgba(180, 29, 29, 0.3); /* Red with 50% transparency */
   width: 95px;
   /* having trouble getting colors in home div and sidebar to overlap and consequently darken the color 
      adding hte pos property below allows the overlap, but still no darken */
+  /* setting position to fixed removes the comp from the normal flow of the page and allows it to overlap */
   position: fixed;
   z-index: 1000;
 
@@ -47,7 +45,7 @@
   /* Reduced width from the left */
   margin-left: 230px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
   .sidebar {
     display: none;
   }

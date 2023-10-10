@@ -1,61 +1,125 @@
-
-.home{
-    height: 400px;
-    color: white;
-    background-color: rgb(81, 113, 141);
+.home {
+  height: 400px;
+  color: black;
+  background-color: rgb(130, 170, 205);
+}
+.dark-mode .home {
+  background-color: rgb(51, 48, 48);
+  color: white;
 }
 
-.home-content h1{
-    margin: auto;
-    margin-top: 100px;
-    padding-left: 200px;
+.home-content h1 {
+  padding-left: 200px;
+  padding-top: 40px;
 }
 
-.typewriter{
-    margin-top: 20px;
-    color: rgb(134, 165, 34);
-    padding-left: 200px;
-
+.typewriter {
+  margin-top: 20px;
+  color: rgb(42, 42, 36);
+  padding-left: 200px;
 }
 
-.button-for-action{
-    padding-left: 200px;
-    display: flex;
+.dark-mode .typewriter {
+  color: white;
 }
 
-.hire-me-button{
-    background-color: #bc4822;
-    text-align:center;
-    width: 120px;
-    padding: 10px;
-    border-radius: 90px;
-    cursor: pointer;
-    margin-top: 10px;
-    border: 2px solid #ab7c17;
+.button-for-action {
+  padding-left: 200px;
+  display: flex;
 }
 
-.hire-me-button:hover{
-    background-color: #f5efeb;
-    width: 150px;
-    transition-duration: 0.5s;
-    color: black;
-}   
-
-.get-resume-button{
-    background-color: #e9c01d;
-    text-align:center;
-    width: 120px;
-    padding: 10px;
-    border-radius: 90px;
-    cursor: pointer;
-    margin-top: 10px;
-    border: 2px solid #e36a32;
+.hire-me-button {
+  background-color: #bc4822;
+  text-align: center;
+  width: 120px;
+  padding: 10px;
+  border-radius: 90px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: 2px solid #ab7c17;
+  margin-right: 2px;
 }
 
-.get-resume-button:hover{
-    background-color: #050404;
-    width: 150px;
-    transition-duration: 0.5s;
-    color: rgb(247, 242, 242);
-} 
+.hire-me-button:hover {
+  background-color: #f5efeb;
+  width: 150px;
+  transition-duration: 0.5s;
+  color: black;
+}
 
+.get-resume-button {
+  background-color: #e9c01d;
+  text-align: center;
+  width: 120px;
+  padding: 10px;
+  border-radius: 90px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: 2px solid #e36a32;
+}
+
+.get-resume-button:hover {
+  background-color: #050404;
+  width: 150px;
+  transition-duration: 0.5s;
+  color: rgb(247, 242, 242);
+}
+
+.theme-change {
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background-color: #323be3;
+  right: 0;
+  margin-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  /* default position is static, so need to change it to fixed to get it to move - for the top prop to take effect */
+  position: fixed;
+  top: 150px;
+  z-index: 1;
+  /* margin-top: 250px; */
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.light-mode .theme-change {
+  background-color: #e3b911;
+}
+
+
+
+.dark-mode .dark-mode-icon {
+    background-color: #323be3;
+    animation: rotateDarkIcon 2s both ease-in-out;
+    margin-bottom: 2px;
+  }
+
+.light-mode .light-mode-icon {
+  background-color: #e3b911;
+  animation: rotateLightIcon 20s infinite ease-in-out;
+  margin-bottom: 2px;
+}
+
+@keyframes rotateLightIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+@keyframes rotateDarkIcon {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}

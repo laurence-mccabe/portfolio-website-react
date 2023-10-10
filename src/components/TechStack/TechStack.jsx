@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './TechStack.css'
-import Project from '../Projects/Project'
+import Fade from 'react-reveal/Fade';
+
 
 const TechStack = () => {
   const data = [
@@ -79,9 +80,14 @@ const TechStack = () => {
       </div>
 
       <div className="row tech-row">
+
         {data.slice(0, showMoreTechStack).map((item, index) => {
+
           return (
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12" key={index}>
+            <>
+            <Fade right >
+
+            <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12" key={index}>
               <div
                 className={
                   index === isActive ? 'tech-content tech-content-marked' : ' tech-content'
@@ -98,7 +104,10 @@ const TechStack = () => {
                 <p className="">{item.name}</p>
               </div>
             </div>
+            </Fade>
+            </>
           )
+
         })}
       </div>
 
@@ -115,11 +124,8 @@ const TechStack = () => {
         </span>
         </div>
       )}
-      <div>
-        <Project />
+      
     </div>
-    </div>
-    
     
   )
 }

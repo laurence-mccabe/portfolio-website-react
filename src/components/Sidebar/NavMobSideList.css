@@ -2,7 +2,7 @@
   color: white;
   list-style-type: none;
   cursor: pointer;
-  margin-top: 5px;
+  margin-top: 10px;
   font-size: small;
 }
 
@@ -14,6 +14,8 @@
 
 .mobile-navbar-items ul li a {
   text-decoration: none;
+  color:black;
+  font-weight: 700;
 }
 
 .mobile-nav-item {

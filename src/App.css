@@ -65,3 +65,12 @@
   outline: 1px solid slategrey;
 }
 
+body{
+  background-color: aliceblue;
+}
+.dark-mode body{
+  background-color: rgb(91, 39, 142);
+}
+
+
+

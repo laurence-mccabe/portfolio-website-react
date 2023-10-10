@@ -1,7 +1,7 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import './Education.css'
 import { FaGraduationCap } from 'react-icons/fa'
-import Testimonial from '../Testimonial/Testimonial'
+import Fade from 'react-reveal/Fade';
 
 const Education = () => {
 const data =[
@@ -41,6 +41,7 @@ const colors = [
   ]
 
   return (
+    <Fade left>
     <>
     <div className="container education-section" id="education">
       <div className="section-title">
@@ -74,8 +75,9 @@ const colors = [
         ))}
       </VerticalTimeline>
     </div>
-    <Testimonial />
+    {/* test */}
     </>
+    </Fade>
   )
 }
 

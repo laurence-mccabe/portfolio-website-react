@@ -1,17 +1,32 @@
+import { useDarkMode } from '../Contexts/DarkModeProvider'
+import { HiOutlineMoon, HiOutlineSun } from 'react-icons/hi2'
 import './Home.css'
+import Fade from 'react-reveal/Fade';
+
 
 import Typewriter from 'typewriter-effect'
 
 const Home = () => {
+  const { isDarkMode, toggleDarkMode } = useDarkMode()
+
   return (
     <>
-      <div className="container-fluid home" id='home'>
+      <div className="container-fluid home " id="home">
+        <div className="theme-change" onClick={toggleDarkMode}>
+          {isDarkMode ? (
+            <HiOutlineMoon size={35} className="dark-mode-icon" />
+          ) : (
+            <HiOutlineSun size={35} className="light-mode-icon" />
+          )}
+        </div>
+
         <div className="container home-content">
-          <h1>Hi, I am a ...</h1>
+          <h1>Hi, I'm Laurence McCabe</h1>
+
           <h3 className="typewriter">
             <Typewriter
               options={{
-                strings: ['Front end', 'Web developer'],
+                strings: ['A front end', 'Web developer'],
                 autoStart: true,
                 loop: false,
                 delay: 5,

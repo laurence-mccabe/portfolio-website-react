@@ -1,8 +1,16 @@
-.workExperience {
+.work-experience-section {
     margin-top: 50px;
     padding: 10px;
     z-index: -1;
+    /* margin-left: 95px; */
 }
+
+.dark-mode .work-experience-section {
+    color: white;
+}
+/* .expanded-sidebar .work-experience-section {
+    margin-left: 230px;
+  } */
 
 .tech-skills p{
     background-color: black;
