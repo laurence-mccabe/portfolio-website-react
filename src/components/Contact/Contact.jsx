@@ -1,18 +1,12 @@
 import './Contact.css'
 import deskSetupPic from '../../Image/deskSetup.jpg'
 import { BsSendCheckFill } from 'react-icons/bs'
-import Fade from 'react-reveal/Fade'
+import { Fade } from "react-awesome-reveal";
 
 const Contact = () => {
   return (
-    <Fade bottom>
+    <Fade top>
       <div className="container contact-section" id="contact">
-        {/* <div className="contact-form-design" >
-        <div className="text-center">
-          <h5>Contact Me</h5>
-          <span className="line"></span>
-        </div>
-      </div> */}
         <div className="row contact-row ">
           <div className="col-12 col-xl-6 contact-form-image">
             <img src={deskSetupPic} alt="contact-form-image" />
@@ -48,7 +42,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </Fade>
+      </Fade>
   )
 }
 

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './TechStack.css'
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
 
 
 const TechStack = () => {
@@ -85,9 +85,10 @@ const TechStack = () => {
 
           return (
             <>
-            <Fade right >
 
             <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12" key={index}>
+              <Fade top>
+
               <div
                 className={
                   index === isActive ? 'tech-content tech-content-marked' : ' tech-content'
@@ -103,8 +104,9 @@ const TechStack = () => {
 
                 <p className="">{item.name}</p>
               </div>
+              </Fade>
+
             </div>
-            </Fade>
             </>
           )
 

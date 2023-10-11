@@ -1,6 +1,6 @@
 import './About.css'
 import profilePic from '../../Image/cat2.jpg'
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
 
 
 const About = () => {
@@ -34,7 +34,7 @@ const About = () => {
       </div>
 
     </div>
-    </Fade>
+     </Fade>
   )
 }
 

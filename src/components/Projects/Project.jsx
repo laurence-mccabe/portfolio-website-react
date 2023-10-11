@@ -1,7 +1,7 @@
 import './Project.css'
 import ProjectList from './ProjectList'
-import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
+import { Fade } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 const Project = () => {
   const data = [
@@ -85,7 +85,7 @@ const Project = () => {
        {/* wor */}
       </div>
     </div>
-    </Fade>
+     </Fade>
   )
 }
 

@@ -2,7 +2,7 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import './Testimonial.css'
-import Fade from 'react-reveal/Fade'
+import { Fade } from "react-awesome-reveal";
 
 function Testimonial() {
   const data = [
@@ -131,7 +131,7 @@ function Testimonial() {
 
 
   return (
-    <Fade top>
+    <Fade top duration={2000}>
       <div className="container testimonial-section" id="testimonial">
         <div className="section-title ">
           <h5>Testimonial</h5>
@@ -141,6 +141,7 @@ function Testimonial() {
           <Slider {...settings}>
             {data.map((item, index) => (
               <div key={index} className="content-slider-main" >
+                {/* <Fade right> */}
                 <div className="content-slider" style={{ backgroundColor: colors[index] }}>
                   <img
                     src={item.img}
@@ -158,7 +159,7 @@ function Testimonial() {
           </Slider>
         </div>
       </div>
-    </Fade>
+     </Fade>
   )
 }
 
