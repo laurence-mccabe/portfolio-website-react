@@ -3,9 +3,7 @@
     /* margin-left: 95px; */
   }
 
-/* .expanded-sidebar .project-section {
-    margin-left: 230px;
-  } */
+
 
 .projects {
   position: relative;
@@ -61,7 +59,9 @@
   background-color: rgb(10, 10, 10);
   color: white;
 }
-
+.live-demo-button-row{
+  padding-left: 20px;
+}
 .live-demo-button {
   background-color: rgb(136, 186, 34);
   width: fit-content;
@@ -78,6 +78,9 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 5px;
   cursor: pointer;
+  font-weight:bold;
+  text-decoration: underline;
+  width: 100%;
 }
 
 .live-demo-button:hover {

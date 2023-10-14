@@ -9,38 +9,39 @@ const TechStack = () => {
       name: 'Full Stack Web Development',
     },
     {
-      name: 'ux ui',
+      name: 'HTML',
     },
     {
-      name: 'see all the listings from the port review vid on yt',
+      name: 'CSS',
     },
     {
-      name: 'Full Stack Web Development',
+      name: 'JavsScript',
     },
     {
-      name: 'Full Stack Web Development',
+      name: 'React',
     },
     {
-      name: 'Full Stack Web Development',
+      name: 'UI/UX Design',
     },
     {
-      name: 'Full Stack Web Development',
+      name: 'Git & GitHub',
     },
     {
-      name: 'see all the listings from the port review vid on yt',
+      name: "Web API's",
     },
     {
-      name: 'Full Stack Web Development',
+      name: 'React Query',
     },
     {
-      name: 'Full Stack Web Development',
+      name: 'React Router',
     },
     {
-      name: 'Full Stack Web Development',
+      name: 'TailWind CSS',
     },
     {
-      name: 'Full Stack Web Development',
+      name: 'Asp.Net',
     },
+    
   ]
 
   const colors = [

@@ -11,8 +11,7 @@ import { SidebarProvider } from './components/Contexts/SidebarContext '
 import Contact from './components/Contact/Contact'
 import Project from './components/Projects/Project'
 import WorkExperience from './components/WorkExperience/WorkExperience'
-import Education from './components/Education/Education'
-import Testimonial from './components/Testimonial/Testimonial'
+
 
 const App = () => {
 
@@ -29,8 +28,6 @@ const App = () => {
         <TechStack />
         <Project />
         <WorkExperience />
-        <Education  />
-        <Testimonial  />
         <Contact />
         <ScrollToTop
           style={{

@@ -1,22 +1,14 @@
 .work-experience-section {
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 10px;
     z-index: -1;
-    /* margin-left: 95px; */
+    color: black;
 }
-
-.dark-mode .work-experience-section {
-    color: white;
-}
-/* .expanded-sidebar .work-experience-section {
-    margin-left: 230px;
-  } */
 
 .tech-skills p{
     background-color: black;
     border-radius: 90px;
-    color:white;
-    padding:10px;
+    padding:5px;
     text-align: center;
     /* width: 100px; */
     margin: 5px;
@@ -28,10 +20,46 @@
     transition-duration: 0.2s;
 }
 
-.date-class{
-    color: black; 
-}
-
 .work-experience-line{
     margin-bottom: 10px;
 }
+
+.date-class {
+    font-weight: bold; /* Make the date text bold */
+    color: white; /* Set the color of the date text */
+    
+  }
+
+.vertical-timeline-element a{
+    color: #f7e30d; /* Blue color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+    font-style: italic;
+  }
+  .vertical-timeline-element {
+    color: white; /* Blue color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+    font-style: italic;
+  }
+
+  .vertical-timeline-element-title{
+    color: black;
+  }
+  .vertical-timeline-element-subtitle{
+    color: rgb(64, 51, 51);
+    font-style: italic;
+  }
+  .vertical-timeline-element-description{
+    color: black;
+  }
+  
+  .dark-mode .vertical-timeline-element-title{
+    color: white;
+  }
+  .dark-mode .vertical-timeline-element-subtitle{
+    color: rgb(243, 200, 200);
+  }
+  .dark-mode .vertical-timeline-element-description{
+    color: white;
+  }

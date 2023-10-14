@@ -8,76 +8,60 @@ function Testimonial() {
   const data = [
     {
       name: 'Emily',
-      position: 'ceo',
-      des: 'I like his work',
+      position: 'Project Organiser',
+      des: '"Well organized."',
       img: 'https://www.w3schools.com/howto/img_avatar.png',
     },
     {
-      name: 'joe',
-      position: 'cyyyy',
-      des: 'I like his work',
+      name: 'Joe',
+      position: 'DevRel',
+      des: '"Good grasp on English an communication."',
       img: 'https://www.w3schools.com/howto/img_avatar.png',
     },
     {
-      name: 'sam',
-      position: 'ceo',
-      des: 'I like his work ggg',
+      name: 'Sam',
+      position: 'Tech Lead',
+      des: '"Good attitude and Team Player"',
+      img: 'https://www.w3schools.com/howto/img_avatar.png',
+    }
+    ,
+    {
+      name: 'Marvin',
+      position: 'Senior Software Engineer',
+      des: '"Always looking to improve"',
       img: 'https://www.w3schools.com/howto/img_avatar.png',
     },
     {
-      name: 'Emily',
-      position: 'ceo',
-      des: 'I like his work',
+      name: 'Henry',
+      position: 'Software developer',
+      des: '"Produced quality code."',
       img: 'https://www.w3schools.com/howto/img_avatar.png',
     },
-    {
-      name: 'joe',
-      position: 'cyyyy',
-      des: 'I like his work',
-      img: 'https://www.w3schools.com/howto/img_avatar.png',
-    },
-    {
-      name: 'sam',
-      position: 'ceo',
-      des: 'I like his work ggg',
-      img: 'https://www.w3schools.com/howto/img_avatar.png',
-    },
+    
     {
       name: 'Emily',
-      position: 'ceo',
-      des: 'I like his work',
+      position: 'Project Organiser',
+      des: '"Well organized."',
       img: 'https://www.w3schools.com/howto/img_avatar.png',
     },
     {
-      name: 'joe',
-      position: 'cyyyy',
-      des: 'I like his work',
+      name: 'Joe',
+      position: 'DevRel',
+      des: '"Good grasp on English an communication."',
       img: 'https://www.w3schools.com/howto/img_avatar.png',
     },
     {
-      name: 'sam',
-      position: 'ceo',
-      des: 'I like his work ggg',
+      name: 'Sam',
+      position: 'Tech Lead',
+      des: '"Good attitude and Team Player"',
       img: 'https://www.w3schools.com/howto/img_avatar.png',
     },
     {
-      name: 'Emily',
-      position: 'ceo',
-      des: 'I like his work',
+      name: 'Brent',
+      position: 'Marketing',
+      des: '"Products explained well."',
       img: 'https://www.w3schools.com/howto/img_avatar.png',
-    },
-    {
-      name: 'joe',
-      position: 'cyyyy',
-      des: 'I like his work',
-      img: 'https://www.w3schools.com/howto/img_avatar.png',
-    },
-    {
-      name: 'sam',
-      position: 'ceo',
-      des: 'I like his work ggg',
-      img: 'https://www.w3schools.com/howto/img_avatar.png',
-    },
+    }
   ]
   const settings = {
     dots: true,
@@ -133,8 +117,8 @@ function Testimonial() {
   return (
     <Fade top duration={2000}>
       <div className="container testimonial-section" id="testimonial">
-        <div className="section-title ">
-          <h5>Testimonial</h5>
+        <div className="section-title">
+          <h5>Testimonials (empty)</h5>
           <span className="line "></span>
         </div>{' '}
         <div>

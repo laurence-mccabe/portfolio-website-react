@@ -10,14 +10,12 @@ const ProjectList = ({ name, des, projectlink, techused }) => {
   }
   
   const colors = [
-    '#800000',
+    '#FFA500',
     '#008000',
     '#800080',
-    '#00008B',
     '#ADD8E6',
     '#FFFF00',
     '#00FF00',
-    '#FF00FF',
     '#FF0000',
     '#FFA500',
     
@@ -45,6 +43,14 @@ const ProjectList = ({ name, des, projectlink, techused }) => {
           <p onClick={handleShowandCollpase} className="tech-Paragraph">{des}</p>
         </>
       )}
+      <div className="row live-demo-button-row">
+       <div className="live-demo-button">
+            <a href={projectlink} target="_blank" rel="noreferrer">
+              Live Demo
+            </a>
+          </div>
+          </div>
+
             {techused.map((tech, index) => (
               <div className="col-xl-3 col-lg- col-md-6 col-sm-12" key={index}>
                 <div className="tech-used-in-project">
@@ -54,11 +60,7 @@ const ProjectList = ({ name, des, projectlink, techused }) => {
             ))}
           </div>
 
-          <div className="live-demo-button">
-            <a href={projectlink} target="_blank" rel="noreferrer">
-              Live Demo
-            </a>
-          </div>
+         
           
     </div>
   )

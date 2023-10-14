@@ -1,4 +1,4 @@
-import profilePic from '../../Image/cat.avif'
+import profilePic from '../../Image/ProfilePicture.png'
 import './SidebarList.css'
 import {
   FcHome,

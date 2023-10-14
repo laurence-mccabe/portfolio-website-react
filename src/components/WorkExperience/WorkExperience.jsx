@@ -10,79 +10,86 @@ import { Fade } from "react-awesome-reveal";
 const WorkExperience = () => {
   const data = [
     {
-      companyname: 'Full Stack Web ',
-      position: 'Front end Web Developer',
+      companyname: 'General Assembly ',
+      position: 'React Js Developer',
       description:
-        'I am a Front end Web Developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.',
+        "A 3 month part time course that teaches the fundamentals of React Js. Using web APi's, 3 projects were built, the biggest is the Places Visited app found above in the projects section.",
       year: '2023',
+      link: 'https://generalassemb.ly/education/react-development/sydney', // Add the link here
+      linkText: "React Course",
+
       techSkills: [
         {
-          techname: 'Node Js',
+          techname: 'React',
         },
         {
-          techname: 'Express Js',
+          techname: 'Javascript',
         },
         {
-          techname: 'css Js',
+          techname: 'Tailwind CSS',
         },
         {
-          techname: 'html Js',
+          techname: 'Git',
+        },
+      ],
+
+    },
+    {
+      companyname: 'Coder Foundry ',
+      position: 'Full Stack WebDev (ASP.NET)',
+      description:
+        'A full stack course teaching web development using a Microsoft stack: C#, MVC, ASP.Net and Bootstrap', 
+      year: '2022',
+      link: "https://learn.coderfoundry.com/dotnet6_with_MVC",
+      linkText: "Coder Foundry Course",
+      link2:"https://portfolio2121.netlify.app/#contact",
+      link2Text: "Projects Built",
+
+      techSkills: [
+        {
+          techname: 'C#',
+        },
+        {
+          techname: 'Asp.Net',
+        },
+        {
+          techname: 'MVC',
+        },
+        {
+          techname: 'Postgres',
         },
       ],
     },
     {
-      companyname: 'Full Stack Web ',
-      position: 'Front end Web Developer',
+      companyname: 'Bachelor in IT ',
+      position: 'QUT',
       description:
-        'I am a Front end Web Developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.',
-      year: '2020 - 2021',
+        'I completed a Bachelor of IT through Queensland University of Technology in 2016 with a major in computer science. In groups using scrum methodology we built out some games, and a patient tracking application.',
+      year: '2017',
 
       techSkills: [
         {
-          techname: 'Node Js',
+          techname: 'Javascript',
         },
         {
-          techname: 'Express Js',
+          techname: 'Python',
         },
         {
-          techname: 'css Js',
+          techname: 'C#',
         },
         {
-          techname: 'html Js',
-        },
-      ],
-    },
-    {
-      companyname: 'Full Stack Web ',
-      position: 'Front end Web Developer',
-      description:
-        'I am a Front end Web Developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.',
-      year: '2024',
-
-      techSkills: [
-        {
-          techname: 'Node Js',
-        },
-        {
-          techname: 'Express Js',
-        },
-        {
-          techname: 'css Js',
-        },
-        {
-          techname: 'html Js',
+          techname: 'HTML & CSS',
         },
       ],
     },
   ]
   const colors = [
     '#FF0000',
-    '#0000FF',
+    '#179e17',
     '#800080',
     '#00008B',
     '#ADD8E6',
     '#FFFF00',
-    '#00FF00',
     '#FF00FF',
     '#FF0000',
     '#FFA500',
@@ -94,7 +101,7 @@ const WorkExperience = () => {
     <Fade direction="left">
     <div className="container work-experience-section" id="work-experience">
       <div className="section-title">
-        <h5>Work Experience</h5>
+        <h5>Experience / Education</h5>
         <span className="line work-experience-line"></span>
       </div>
 
@@ -103,7 +110,7 @@ const WorkExperience = () => {
         }}>
         {data.map((item, index) => (
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
+            className="vertical-timeline-element"
             key={index}
             contentStyle={{ background: colors[index], color: '#fff' }}
             contentArrowStyle={{ borderRight: '15px solid  rgb(33, 150, 243)' }}
@@ -132,8 +139,9 @@ const WorkExperience = () => {
                 ))}
               </div>
             </p>
-            <p className="vertical-timeline-element-subtitle mt-1">
-              {item.description}
+            <p className="vertical-timeline-element-description mt-1">
+              {item.description} {item.link ? <a href={item.link} target="_blank" rel="noopener noreferrer">{item.linkText}</a> : null}
+              {item.link2 ? <a href={item.link2} target="_blank" rel="noopener noreferrer">{", "}{item.link2Text}</a> : null}
             </p>
           </VerticalTimelineElement>
         ))}

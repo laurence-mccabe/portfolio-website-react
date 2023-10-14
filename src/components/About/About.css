@@ -2,6 +2,13 @@
   margin-left: 240px; 
   max-width: calc(100% - 250px); 
 } */
+.about-paragraph a{
+    color: #f7e30d; /* Blue color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+    font-style: italic;
+  
+}
 
 .about-section {
   box-shadow: 12px 10px 10px -1px rgba(0, 0, 0, 0.75);

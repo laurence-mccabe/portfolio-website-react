@@ -1,6 +1,6 @@
 .sidebar-profile-pic {
-  height: 120px;
-  width: 120px;
+  height: 90px;
+  width: 90px;
   display: flex;
   margin-top: 20px;
   border-radius: 50%; /* Use 50% to create a circular border */
