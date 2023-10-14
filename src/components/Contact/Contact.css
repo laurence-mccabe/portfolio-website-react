@@ -42,7 +42,7 @@
     margin-bottom: 10px;
 }
 
-.button-submit p {
+.button-submit button {
   background-color: black;
   padding: 10px;
   border-radius: 30px;

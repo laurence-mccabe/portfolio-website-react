@@ -3,6 +3,8 @@ import deskSetupPic from '../../Image/deskSetup.jpg';
 import { BsSendCheckFill } from 'react-icons/bs';
 import { Fade } from 'react-awesome-reveal';
 import { useState } from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const encode = (data) => {
@@ -17,10 +19,12 @@ const Contact = () => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...formData }),
     })
-      .then(() => alert('Success!'))
-      .catch((error) => alert(error));
-
-    e.preventDefault();
+    .then(() => {
+      toast.success('Success!');
+    })
+    .catch((error) => {
+      toast.error(error.message);
+    });
   };
 
   const handleChange = (e) => {
