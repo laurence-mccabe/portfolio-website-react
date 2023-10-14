@@ -1,9 +1,37 @@
-import './Contact.css'
-import deskSetupPic from '../../Image/deskSetup.jpg'
-import { BsSendCheckFill } from 'react-icons/bs'
-import { Fade } from 'react-awesome-reveal'
+import './Contact.css';
+import deskSetupPic from '../../Image/deskSetup.jpg';
+import { BsSendCheckFill } from 'react-icons/bs';
+import { Fade } from 'react-awesome-reveal';
 
 const Contact = () => {
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
+  };
+
+  const handleSubmit = (e) => {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...formData }),
+    })
+      .then(() => alert('Success!'))
+      .catch((error) => alert(error));
+
+    e.preventDefault();
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const [formData, setFormData] = {
+    name: '',
+    email: '',
+    message: '',
+  };
+
   return (
     <Fade top>
       <div className="container contact-section" id="contact">
@@ -15,40 +43,51 @@ const Contact = () => {
           <div className="col-lg-6 col-xl-6 col-md-12 col-sm-12 second-contact-col ">
             <div className="contact-me-header">Contact Me</div>
 
-            <form className="contact-form" name="contact" method="POST">
-              <input type="hidden" name="contact" value="contact" />
+            <form
+              className="contact-form"
+              name="contact"
+              method="POST"
+              onSubmit={handleSubmit}
+            >
+              <input type="hidden" name="form-name" value="contact" />
 
               <label className="form-label">Name</label>
               <input
                 name="name"
                 type="text"
                 className="form-control contact-form input-field"
-              ></input>
+                value={formData.name}
+                onChange={handleChange}
+              />
 
               <label className="form-label">Email</label>
               <input
                 type="email"
                 name="email"
                 className="form-control contact-form input-field"
-              ></input>
+                value={formData.email}
+                onChange={handleChange}
+              />
 
               <label className="form-label">Message</label>
               <textarea
                 name="message"
                 type="textbox"
                 className="form-control input-field"
-              ></textarea>
+                value={formData.message}
+                onChange={handleChange}
+              />
               <div className="button-submit">
-                <p type="submit" className="btn btn-primary">
+                <button type="submit" className="btn btn-primary">
                   Send&nbsp; <BsSendCheckFill size={15} />
-                </p>
+                </button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </Fade>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
