@@ -1,7 +1,7 @@
 import './Contact.css'
 import deskSetupPic from '../../Image/deskSetup.jpg'
 import { BsSendCheckFill } from 'react-icons/bs'
-import { Fade } from "react-awesome-reveal";
+import { Fade } from 'react-awesome-reveal'
 
 const Contact = () => {
   return (
@@ -15,23 +15,26 @@ const Contact = () => {
           <div className="col-lg-6 col-xl-6 col-md-12 col-sm-12 second-contact-col ">
             <div className="contact-me-header">Contact Me</div>
 
-            <form className="contact-form"  method="POST" data-netlify="true">
-              <label className="form-label" type="text" name="name">Name</label>
-              <input
-                type="hidden"
-                className="form-control contact-form input-field"
-                name="contact"
-                value="contact"
-              ></input>
+            <form className="contact-form" name="contact" method="POST">
+              <input type="hidden" name="form-name" value="contact" />
 
-              <label className="form-label" type="email" name="email">Email</label>
+              <label className="form-label">Name</label>
               <input
+                name="name"
                 type="text"
                 className="form-control contact-form input-field"
               ></input>
 
-              <label className="form-label" name="message">Message</label>
+              <label className="form-label">Email</label>
+              <input
+                type="email"
+                name="email"
+                className="form-control contact-form input-field"
+              ></input>
+
+              <label className="form-label">Message</label>
               <textarea
+                name="message"
                 type="textbox"
                 className="form-control input-field"
               ></textarea>
@@ -44,7 +47,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      </Fade>
+    </Fade>
   )
 }
 
