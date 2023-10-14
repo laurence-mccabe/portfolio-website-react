@@ -36,7 +36,7 @@
 .project-list:hover {
   border-left: 5px solid rgb(136, 186, 34);
   transition-duration: 0.2s;
-  background-color: ;
+  background-color: green;
 }
 
 .title-and-collapse-option {

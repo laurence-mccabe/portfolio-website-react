@@ -2,6 +2,7 @@ import './Contact.css';
 import deskSetupPic from '../../Image/deskSetup.jpg';
 import { BsSendCheckFill } from 'react-icons/bs';
 import { Fade } from 'react-awesome-reveal';
+import { useState } from 'react';
 
 const Contact = () => {
   const encode = (data) => {
@@ -26,11 +27,11 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const [formData, setFormData] = {
+  const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
-  };
+  });
 
   return (
     <Fade top>
