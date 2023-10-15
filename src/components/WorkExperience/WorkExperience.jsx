@@ -101,7 +101,7 @@ const WorkExperience = () => {
     <Fade direction="left">
     <div className="container work-experience-section" id="work-experience">
       <div className="section-title">
-        <h5>Experience / Education</h5>
+        <h5>Education / Education</h5>
         <span className="line work-experience-line"></span>
       </div>
 

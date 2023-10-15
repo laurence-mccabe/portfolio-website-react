@@ -16,9 +16,7 @@ const NavMobSideList = ({ expandMobileSidebar }) => {
     { id: 'about', text: 'About', icon: <FcNightPortrait size={15} /> },
     { id: 'techstack', text: 'Tech Stack', icon: <MdBiotech size={15} /> },
     { id: 'projects', text: 'Projects', icon: <FcTodoList size={15} /> },
-    { id: 'work-experience', text: 'Work Experience', icon: <FcFactory size={15} color="yellow" /> },
-    { id: 'education', text: 'Education', icon: <MdCastForEducation size={15} /> },
-    { id: 'testimonial', text: 'Testimonial', icon: <FcSalesPerformance size={15} /> },
+    { id: 'work-experience', text: 'Edu/Experience', icon: <FcFactory size={15} color="yellow" /> },
     { id: 'contact', text: 'Contact', icon: <FcContacts size={15} /> },
   ];
 
