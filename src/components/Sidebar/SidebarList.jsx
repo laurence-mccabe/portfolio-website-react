@@ -26,9 +26,7 @@ const SidebarList = ({ expandSidebar }) => {
     { id: 'about', text: 'About', icon: <FcNightPortrait size={25} /> },
     { id: 'techstack', text: 'Tech Stack', icon: <MdBiotech size={25} /> },
     { id: 'projects', text: 'Projects', icon: <FcTodoList size={25} /> },
-    { id: 'work-experience', text: 'Work Experience', icon: <FcFactory size={25} color="yellow" /> },
-    { id: 'education', text: 'Education', icon: <MdCastForEducation size={25} /> },
-    { id: 'testimonial', text: 'Testimonial', icon: <FcSalesPerformance size={25} /> },
+    { id: 'work-experience', text: 'Edu/Experience', icon: <FcFactory size={25} color="yellow" /> },
     { id: 'contact', text: 'Contact', icon: <FcContacts size={25} /> },
   ];
   
