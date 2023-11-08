@@ -8,7 +8,7 @@ const ProjectList = ({ name, des, projectlink, techused }) => {
   const handleShowandCollpase = () => {
     setShow(!show)
   }
-  
+
   const colors = [
     '#FFA500',
     '#008000',
@@ -18,12 +18,9 @@ const ProjectList = ({ name, des, projectlink, techused }) => {
     '#00FF00',
     '#FF0000',
     '#FFA500',
-    
-    
   ]
 
   return (
-    
     <div className="project-list">
       <div className="title-and-collapse-option">
         <h5>{name}</h5>
@@ -35,33 +32,32 @@ const ProjectList = ({ name, des, projectlink, techused }) => {
         </p>
       </div>
 
-      
-          <div className="row">
-          {show && (
-        <>
-          {/* can use des.substring to limit the number of characters */}
-          <p onClick={handleShowandCollpase} className="tech-Paragraph">{des}</p>
-        </>
-      )}
-      <div className="row live-demo-button-row">
-       <div className="live-demo-button">
+      <div className="row">
+        {show && (
+          <>
+            {/* can use des.substring to limit the number of characters */}
+            <p className="tech-Paragraph">
+              {des}
+            </p>
+          </>
+        )}
+        <div className="row live-demo-button-row">
+          <div className="live-demo-button">
             <a href={projectlink} target="_blank" rel="noreferrer">
               Live Demo
             </a>
           </div>
-          </div>
+        </div>
+        
 
-            {techused.map((tech, index) => (
-              <div className="col-xl-3 col-lg- col-md-6 col-sm-12" key={index}>
-                <div className="tech-used-in-project">
-                  <p style={{backgroundColor:colors[index]}}>{tech.techname}</p>
-                </div>
-              </div>
-            ))}
+        {techused.map((tech, index) => (
+          <div className="col-xl-3 col-lg- col-md-6 col-sm-12" key={index}>
+            <div className="tech-used-in-project">
+              <p style={{ backgroundColor: colors[index] }}>{tech.techname}</p>
+            </div>
           </div>
-
-         
-          
+        ))}
+      </div>
     </div>
   )
 }

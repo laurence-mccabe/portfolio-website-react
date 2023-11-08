@@ -1,7 +1,7 @@
 import './Project.css'
 import ProjectList from './ProjectList'
-import { Fade } from "react-awesome-reveal";
-import { Zoom } from "react-awesome-reveal";
+import { Fade } from 'react-awesome-reveal'
+import { Zoom } from 'react-awesome-reveal'
 
 const Project = () => {
   const data = [
@@ -63,9 +63,26 @@ const Project = () => {
       ],
     },
     {
-      name: "C# Projects: 'The Bug Tracker'.",
-      des: 'Click on the Demo button below to see the projects (in the projects section) I have built out in C# and MVC. The Bug Tracker is a project management tool that allows users to create projects, add developers to projects, and create tickets for bugs that need to be fixed. The Bug Tracker also allows users to assign tickets to developers and track the progress of the ticket.',
-      projectlink: 'https://react-pizza2.netlify.app/',
+      name: "C# Projects: 'The Bug Tracker'",
+      des: (
+        <>
+          Click{' '}
+          <a
+            href="https://portfolio2121.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            here
+          </a>{' '}
+          to see my C# projects and click on the "Live Demo" button below to
+          see the "Bug tracker" project - the main project I built out in C# and
+          MVC. The Bug Tracker is a project management tool that allows users to
+          create projects, add developers to projects, and create tickets for
+          bugs that need to be fixed. The Bug Tracker also allows users to
+          assign tickets to developers and track the progress of the ticket.
+        </>
+      ),
+      projectlink: 'https://bugtracker1.up.railway.app/',
       techused: [
         {
           techname: 'C#',
@@ -85,26 +102,24 @@ const Project = () => {
 
   return (
     <Fade left>
-    <div className="container project-section">
-      <div className="section-title projects">
-        <h5>Projects</h5>
-        <span className="line"></span>
-      </div>
+      <div className="container project-section">
+        <div className="section-title projects">
+          <h5>Projects</h5>
+          <span className="line"></span>
+        </div>
 
-      <div className="row project-row">
-        {data.map((item, index) => (
-          <div className="col-12" key={index}>
-             <Zoom>
-            <ProjectList {...item} />
-            </Zoom>
-          </div>
-        ))}
+        <div className="row project-row">
+          {data.map((item, index) => (
+            <div className="col-12" key={index}>
+              <Zoom>
+                <ProjectList {...item} />
+              </Zoom>
+            </div>
+          ))}
+        </div>
+        <div>{/* wor */}</div>
       </div>
-      <div>
-       {/* wor */}
-      </div>
-    </div>
-     </Fade>
+    </Fade>
   )
 }
 
