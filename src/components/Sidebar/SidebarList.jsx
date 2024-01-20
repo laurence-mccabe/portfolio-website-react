@@ -6,11 +6,9 @@ import {
   FcTodoList,
   FcContacts,
   FcFactory,
-  FcSalesPerformance,
 } from 'react-icons/fc'
-import { MdCastForEducation, MdBiotech } from 'react-icons/md'
+import { MdBiotech } from 'react-icons/md'
 import { Link } from 'react-scroll'
-// 12:30
 import { useState } from 'react'
 
 const SidebarList = ({ expandSidebar }) => {

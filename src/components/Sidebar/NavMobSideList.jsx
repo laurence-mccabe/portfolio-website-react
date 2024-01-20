@@ -1,6 +1,6 @@
 import './NavMobSideList.css'
-import { FcHome, FcNightPortrait, FcTodoList, FcContacts, FcFactory, FcSalesPerformance } from 'react-icons/fc'
-import { MdCastForEducation, MdBiotech } from 'react-icons/md'
+import { FcHome, FcNightPortrait, FcTodoList, FcContacts, FcFactory } from 'react-icons/fc'
+import { MdBiotech } from 'react-icons/md'
 import { Link } from 'react-scroll'
 import { useState } from 'react'
 

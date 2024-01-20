@@ -1,12 +1,6 @@
 .techstack-section {
-  /* cannot have a fixed height - it will cause data.map items to overlap the next container */
-  /* height: 800px; */
   margin-top: 40px;
-  /* margin-left: 95px; */
 }
-/* .expanded-sidebar .techstack-section {
-  margin-left: 230px;
-} */
 
 .section-title h5 {
   text-align: center;

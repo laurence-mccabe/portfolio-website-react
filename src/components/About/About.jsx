@@ -5,7 +5,7 @@ import { Fade } from 'react-awesome-reveal'
 const About = () => {
   return (
     <Fade>
-      <div className="container about-section mt-2" id="about">
+      <div className=" container about-section mt-2" id="about">
         <div className="row about-row">
           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
             <div className="about-image">

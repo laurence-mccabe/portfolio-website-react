@@ -4,19 +4,13 @@ import SidebarList from './SidebarList'
 import { useSidebar } from '../Contexts/SidebarContext '
 
 const Sidebar = () => {
-  const { expandSidebar, setExpandSidebar } = useSidebar() // Use the context hook
-
-  // Remove the local state and handleExpandClick function
-
-  const handleExpandClick = () => {
-    setExpandSidebar(!expandSidebar)
-  }
+  const { expandSidebar, setExpandSidebar } = useSidebar()
 
   return (
     <>
       <div className={expandSidebar ? 'sidebar-expand sidebar' : 'sidebar'}>
         <div className="icon-for-sidebar-expand-and-collapse">
-          <p onClick={handleExpandClick}>
+          <p onClick={() => setExpandSidebar(!expandSidebar)}>
             {expandSidebar ? (
               <BsChevronLeft size={30} />
             ) : (
@@ -27,13 +21,7 @@ const Sidebar = () => {
         <SidebarList expandSidebar={expandSidebar} />
       </div>
 
-      <div
-        className={
-          expandSidebar
-            ? 'container-fluid container-fluid-reduced'
-            : 'container-fluid '
-        }
-      ></div>
+      <div className={expandSidebar ? 'sidebar-width-increase' : ''}></div>
     </>
   )
 }

@@ -1,7 +1,6 @@
-import { useState } from 'react'
 import './TechStack.css'
 import { Fade } from "react-awesome-reveal";
-
+import React, { useState } from 'react';
 
 const TechStack = () => {
   const data = [
@@ -70,8 +69,7 @@ const TechStack = () => {
     setShowMoreTechStack(6)
   }
 
-  console.log(data.length)
-  console.log(showMoreTechStack)
+  
 
   return (
     <div className="container techstack-section" id="techstack">
@@ -85,9 +83,9 @@ const TechStack = () => {
         {data.slice(0, showMoreTechStack).map((item, index) => {
 
           return (
-            <>
+            <React.Fragment key={index}>
 
-            <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12" key={index}>
+            <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12" >
               <Fade top>
 
               <div
@@ -108,7 +106,7 @@ const TechStack = () => {
               </Fade>
 
             </div>
-            </>
+            </React.Fragment>
           )
 
         })}

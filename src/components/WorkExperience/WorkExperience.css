@@ -10,7 +10,6 @@
     border-radius: 90px;
     padding:5px;
     text-align: center;
-    /* width: 100px; */
     margin: 5px;
 }
 
@@ -25,21 +24,20 @@
 }
 
 .date-class {
-    font-weight: bold; /* Make the date text bold */
-    color: white; /* Set the color of the date text */
-    
+    font-weight: bold; 
+    color: white; 
   }
 
 .vertical-timeline-element a{
-    color: #f7e30d; /* Blue color for links */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Make the text bold */
+    color: #f7e30d;
+    text-decoration: none; 
+    font-weight: bold; 
     font-style: italic;
   }
   .vertical-timeline-element {
-    color: white; /* Blue color for links */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Make the text bold */
+    color: white; 
+    text-decoration: none;
+    font-weight: bold; 
     font-style: italic;
   }
 

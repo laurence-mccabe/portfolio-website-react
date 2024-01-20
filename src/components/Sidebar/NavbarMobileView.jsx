@@ -6,30 +6,15 @@ import NavMobSideList from './NavMobSideList'
 const NavbarMobileView = () => {
   const [expandMobileSidebar, setExpandMobileSidebar] = useState(false)
 
-  const handleExpandClick = () => {
-    setExpandMobileSidebar(!expandMobileSidebar)
-  }
-
   return (
-     
-      <div
-        className={
-          expandMobileSidebar
-            ? 'container-fluid mobile-view-navbar'
-            : 'container-fluid mobile-view-navbar mobile-sidebar-expand' 
-        }
-      >  
-          <p onClick={handleExpandClick}>
-          {expandMobileSidebar ? (
-              <GiHamburgerMenu size={25} />
-            ) : (
-              <GiHamburgerMenu size={25} />
-            )}
-          </p>
-         
-        <NavMobSideList expandMobileSidebar={expandMobileSidebar} />
+    <div className="mobile-view-navbar">
+      <p onClick={() => setExpandMobileSidebar(!expandMobileSidebar)}>
+        {' '}
+        <GiHamburgerMenu size={25} />{' '}
+      </p>
 
-      </div>
+      <NavMobSideList expandMobileSidebar={expandMobileSidebar} />
+    </div>
   )
 }
 

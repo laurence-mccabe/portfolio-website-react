@@ -1,13 +1,8 @@
-.sidebar-section {
-}
-
 .sidebar {
   height: 100vh;
-  background-color: rgba(180, 29, 29, 0.3); /* Red with 50% transparency */
+  background-color: #b41d1d4d; 
   width: 95px;
-  /* having trouble getting colors in home div and sidebar to overlap and consequently darken the color 
-     adding hte pos property below allows the overlap, but still no darken */
-  /* setting position to fixed removes the comp from the normal flow of the page and allows it to overlap */
+
   position: fixed;
   z-index: 1000;
 
@@ -32,24 +27,18 @@
   color: white;
   border-radius: 5px;
   margin-top: 50px;
+  margin-right: 2px;
 }
 
-/* bs class .container-fluid comes with padding so need to reduce it */
-.container-fluid {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-  overflow: hidden;
-}
-
-.container-fluid-reduced {
-  /* Reduced width from the left */
+.sidebar-width-increase  {
   margin-left: 230px;
 }
+
 @media (max-width: 700px) {
   .sidebar {
     display: none;
   }
-  .container-fluid-reduced {
+  .sidebar-width-increase {
     margin-left: 0;
   }
 }
