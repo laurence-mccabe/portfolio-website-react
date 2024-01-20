@@ -72,5 +72,10 @@ body{
   background-color: rgb(91, 39, 142);
 }
 
+.increase-margin{
+  margin-left: 230px;
+}
 
-
+.normal-margin{
+  margin-left: 95px;
+}
