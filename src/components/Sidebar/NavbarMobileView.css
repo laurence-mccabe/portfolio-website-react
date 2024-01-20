@@ -9,8 +9,8 @@
   background-color: rgba(180, 29, 29, 0.5);
   color: white;
   position: fixed;
-  top: 0; /* Position it at the top */
-  left: 0; /* Position it at the left */
+  top: 0; 
+  left: 0; 
   z-index: 1000;
 }
 
@@ -21,7 +21,3 @@
   }
 
 
-
-/* .navbar-header p{
-
-  } */

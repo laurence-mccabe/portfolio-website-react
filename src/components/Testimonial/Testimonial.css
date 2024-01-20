@@ -1,15 +1,10 @@
 .testimonial-section {
   margin-top: 30px;
-  /* margin-left: 95px; */
 }
 
 .dark-mode .testimonial-section {
   color: white;
 }
-
-/* .expanded-sidebar .testimonial-section{
-  margin-left: 230px;
-} */
 
 .content-slider {
   padding: 10px;
@@ -50,14 +45,6 @@
 .slick-prev {
   left: 0;
 }
-
-/* .content-slider img{
-    width: 150px;
-    height: 150px;
-    border-radius: 20%;
-    margin: 0 auto;
-    margin-top: 20px;
-} */
 
 .content-slider img.center-image {
   height: 80px;

@@ -1,22 +1,24 @@
 .home {
   height: 400px;
   color: black;
-  background-color: rgb(130, 170, 205);
+  background-color: rgb(22, 94, 158);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  
 }
 .dark-mode .home {
-  background-color: rgb(51, 48, 48);
+  background-color: #461681;
   color: white;
 }
 
 .home-content h1 {
-  padding-left: 200px;
   padding-top: 40px;
 }
 
 .typewriter {
   margin-top: 20px;
   color: rgb(42, 42, 36);
-  padding-left: 200px;
 }
 
 .dark-mode .typewriter {
@@ -24,7 +26,6 @@
 }
 
 .button-for-action {
-  padding-left: 200px;
   display: flex;
 }
 
@@ -79,7 +80,6 @@
   position: fixed;
   top: 150px;
   z-index: 1;
-  /* margin-top: 250px; */
   border-radius: 10px;
   cursor: pointer;
 }
@@ -87,8 +87,6 @@
 .light-mode .theme-change {
   background-color: #e3b911;
 }
-
-
 
 .dark-mode .dark-mode-icon {
     background-color: #323be3;

@@ -3,9 +3,9 @@
   width: 90px;
   display: flex;
   margin-top: 20px;
-  border-radius: 50%; /* Use 50% to create a circular border */
+  border-radius: 50%; 
   margin: 0 auto;
-  overflow: hidden; /* Hide any image overflow that might interfere with border radius */
+  overflow: hidden; 
 }
 
 .sidebar-profile-pic img {
@@ -26,7 +26,7 @@
 
 .nav-item .active {
   border-left: 2px solid rgb(233, 249, 4);
-  padding-left: 5px; /* Adjust this value to move the border further to the left */
+  padding-left: 5px; 
   color: yellow;
 }
 

@@ -10,6 +10,31 @@ import { Fade } from "react-awesome-reveal";
 const WorkExperience = () => {
   const data = [
     {
+      companyname: 'Swinburne University ',
+      position: 'PostGrad Cert of Programming and development',
+      description:
+        "A 6 month full time course working on real clients live projects. Programmers and developers create new software and applications to navigate complex computer systems. ",
+      year: '2024',
+      link: 'https://www.swinburneonline.edu.au/online-courses/information-technology-courses/graduate-certificate-programming-and-development/', // Add the link here
+      linkText: "Swinburne course",
+
+      techSkills: [
+        {
+          techname: 'C#',
+        },
+        {
+          techname: 'Javascript',
+        },
+        {
+          techname: 'Python',
+        },
+        {
+          techname: 'HTML/CSS',
+        },
+      ],
+
+    },
+    {
       companyname: 'General Assembly ',
       position: 'React Js Developer',
       description:
@@ -101,7 +126,7 @@ const WorkExperience = () => {
     <Fade direction="left">
     <div className="container work-experience-section" id="work-experience">
       <div className="section-title">
-        <h5>Education / Education</h5>
+        <h5>Education / Work Experience</h5>
         <span className="line work-experience-line"></span>
       </div>
 
@@ -146,7 +171,6 @@ const WorkExperience = () => {
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
-      {/* edu */}
     </div>
      </Fade>
   )

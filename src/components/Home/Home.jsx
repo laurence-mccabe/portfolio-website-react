@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="container-fluid home " id="home">
+      <div className=" home " id="home">
         <div className="theme-change" onClick={toggleDarkMode}>
           {isDarkMode ? (
             <HiOutlineMoon size={35} className="dark-mode-icon" />

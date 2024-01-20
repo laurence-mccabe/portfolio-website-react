@@ -9,8 +9,6 @@ const App = () => {
     <>
       <SidebarProvider>
         <DarkModeProvider>
-          {/* <div id={theme}> </div> */}
-
           <Sidebar />
           <Content />
         </DarkModeProvider>

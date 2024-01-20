@@ -5,10 +5,6 @@ import { FcExpand, FcCollapse } from 'react-icons/fc'
 const ProjectList = ({ name, des, projectlink, techused }) => {
   const [show, setShow] = useState(true)
 
-  const handleShowandCollpase = () => {
-    setShow(!show)
-  }
-
   const colors = [
     '#FFA500',
     '#008000',
@@ -25,7 +21,7 @@ const ProjectList = ({ name, des, projectlink, techused }) => {
       <div className="title-and-collapse-option">
         <h5>{name}</h5>
         <p
-          onClick={handleShowandCollpase}
+          onClick={() => setShow(!show)}
           className="project-list-expand-arrow"
         >
           {!show ? <FcExpand size={20} /> : <FcCollapse size={20} />}
