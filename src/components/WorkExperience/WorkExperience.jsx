@@ -125,7 +125,7 @@ const WorkExperience = () => {
             <h5 className="vertical-timeline-element-subtitle">
               {item.position}
             </h5>
-            <p>
+            <div>
               <div className="row">
                 {item.techSkills.map((tech, index) => (
                   <div
@@ -138,7 +138,7 @@ const WorkExperience = () => {
                   </div>
                 ))}
               </div>
-            </p>
+            </div>
             <p className="vertical-timeline-element-description mt-1">
               {item.description} {item.link ? <a href={item.link} target="_blank" rel="noopener noreferrer">{item.linkText}</a> : null}
               {item.link2 ? <a href={item.link2} target="_blank" rel="noopener noreferrer">{", "}{item.link2Text}</a> : null}
