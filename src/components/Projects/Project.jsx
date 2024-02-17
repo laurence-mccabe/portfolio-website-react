@@ -3,7 +3,7 @@ import ProjectList from './ProjectList'
 import { Fade } from 'react-awesome-reveal'
 import { Zoom } from 'react-awesome-reveal'
 
-const Project = () => {
+const  Project = () => {
   const data = [
     {
       name: 'The Retreat Lodge ',
@@ -45,7 +45,7 @@ const Project = () => {
     },
     {
       name: 'React-Pizza',
-      des: 'I built this project to learn React. It is a simple pizza ordering website. It uses React Router to navigate between pages and React Query to fetch data from a fake API. It also uses Styled Components for styling.',
+      des: 'A simple pizza ordering website which uses React, Redux state management, React Router to navigate between pages, React Query to fetch data from a fake API and Styled Components for styling.',
       projectlink: 'https://react-pizza2.netlify.app/',
       techused: [
         {
