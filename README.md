@@ -1,8 +1,4 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This website was built using React, Bootstrap, Html, css and a number of other packages installed via node package manager which can be found in the package.json file.
+The main packages used in this site are for the animation features seen on the page 
+- the way the components slide in from different directions are achieved through the use
+of the following packages: react-awesome-reveal, react-vertical-timeline-component.
